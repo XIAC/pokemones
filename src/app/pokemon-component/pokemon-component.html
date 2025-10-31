@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Lista Pokemones</h1>
+    <div class="row text-center">
+    <!-- <div class="g-col-4">
+
+    </div> -->
+        <div *ngFor="let pok of pokemones" class="col-4 mb-2">
+            <div  class="card text-center p-2">
+                <img [src]="pok.sprites.front_default" 
+                            style="width: 120px; height: 120px;"/>
+                <div div class="card-body">
+                    <h2>{{pok.name | uppercase }}</h2>
+                    <p><strong>ID:</strong> {{ pok.id }}</p>
+                </div>
+           
+            </div>
+        </div>
+    <!-- <div *ngFor="let pok of pokemones" class="col">
+        <div  class="card text-center p-2">
+            <img [src]="pok.sprites.front_default" 
+                        style="width: 120px; height: 120px;"/>
+            <div div class="card-body">
+                <h2>{{pok.name | uppercase }}</h2>
+                <p><strong>ID:</strong> {{ pok.id }}</p>
+            </div>
+           
+        </div>
+         -->
+
+    </div>
+</div>
